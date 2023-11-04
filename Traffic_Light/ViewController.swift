@@ -20,8 +20,27 @@ class ViewController: UIViewController {
         viewYellow.layer.cornerRadius = 50
         viewGreen.layer.cornerRadius = 50
         button.layer.cornerRadius = 10
+        
+        viewRed.alpha = 0.45
+        viewYellow.alpha = 0.45
+        viewGreen.alpha = 0.45
+    
     }
-
-
+    
+    
+    
+    @IBAction func buttonDidTapped() {
+        if viewRed.alpha != 1.0 && viewYellow.alpha != 1.0 && viewGreen.alpha != 1.0 {
+            viewRed.alpha = 1.0
+        } else if viewRed.alpha == 1.0 && viewYellow.alpha != 1.0 && viewGreen.alpha != 1.0 {
+            viewRed.alpha = 0.45
+            viewYellow.alpha = 1.0
+        } else if viewYellow.alpha == 1.0 && viewRed.alpha != 1.0 && viewGreen.alpha != 1.0 {
+            viewYellow.alpha = 0.45
+            viewGreen.alpha = 1.0
+        } else if viewGreen.alpha == 1.0 && viewRed.alpha != 1.0 && viewYellow.alpha != 1.0 {
+            viewGreen.alpha = 0.45
+        }
+    }
 }
 
