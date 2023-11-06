@@ -16,27 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APQ-GY-ZCc">
-                                <rect key="frame" x="165" y="128" width="100" height="100"/>
-                                <color key="backgroundColor" red="1" green="0.28601457982839207" blue="0.2293361335824482" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="MIC-gK-A4Y">
+                                <rect key="frame" x="30" y="89" width="370" height="420"/>
+                                <subviews>
+                                    <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APQ-GY-ZCc">
+                                        <rect key="frame" x="135" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.28601457982839207" blue="0.2293361335824482" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMR-Ji-ZBZ">
+                                        <rect key="frame" x="135" y="160" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LQ-mg-NTa">
+                                        <rect key="frame" x="135" y="320" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.067407734282691825" green="0.69450708762886593" blue="0.001085301865133058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="1k6-BL-kUk"/>
-                                    <constraint firstAttribute="height" constant="100" id="vSp-Xt-P5m"/>
+                                    <constraint firstAttribute="height" constant="420" id="JKv-XM-xgZ"/>
                                 </constraints>
-                            </view>
-                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMR-Ji-ZBZ">
-                                <rect key="frame" x="165" y="288" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </view>
-                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LQ-mg-NTa">
-                                <rect key="frame" x="165" y="448" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.067407734282691825" green="0.69450708762886593" blue="0.001085301865133058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-OQ-FMM">
-                                <rect key="frame" x="165.66666666666666" y="711" width="98.999999999999972" height="37.333333333333371"/>
+                                <rect key="frame" x="165" y="815.66666666666663" width="100" height="37.333333333333371"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="1XB-Nl-9Rj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="YvM-au-MCn"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START">
@@ -51,18 +55,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hqf-OQ-FMM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Bf-h8-5BT"/>
-                            <constraint firstItem="DMR-Ji-ZBZ" firstAttribute="centerX" secondItem="APQ-GY-ZCc" secondAttribute="centerX" id="58p-pb-wvF"/>
-                            <constraint firstItem="DMR-Ji-ZBZ" firstAttribute="height" secondItem="APQ-GY-ZCc" secondAttribute="height" id="6Ne-Dv-2gU"/>
-                            <constraint firstItem="APQ-GY-ZCc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="BhR-oJ-o33"/>
-                            <constraint firstItem="4LQ-mg-NTa" firstAttribute="centerX" secondItem="DMR-Ji-ZBZ" secondAttribute="centerX" id="Fei-Ns-zSO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hqf-OQ-FMM" secondAttribute="bottom" multiplier="1.2" id="GIZ-6q-tWj"/>
-                            <constraint firstItem="4LQ-mg-NTa" firstAttribute="height" secondItem="DMR-Ji-ZBZ" secondAttribute="height" id="OKw-BG-Zwk"/>
-                            <constraint firstItem="DMR-Ji-ZBZ" firstAttribute="top" secondItem="APQ-GY-ZCc" secondAttribute="bottom" constant="60" id="Srs-h0-RNL"/>
-                            <constraint firstItem="DMR-Ji-ZBZ" firstAttribute="width" secondItem="APQ-GY-ZCc" secondAttribute="width" id="WW0-3a-A4N"/>
-                            <constraint firstItem="APQ-GY-ZCc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xjn-fV-wG7"/>
-                            <constraint firstItem="4LQ-mg-NTa" firstAttribute="top" secondItem="DMR-Ji-ZBZ" secondAttribute="bottom" constant="60" id="Znz-Dl-Oe1"/>
-                            <constraint firstItem="4LQ-mg-NTa" firstAttribute="width" secondItem="DMR-Ji-ZBZ" secondAttribute="width" id="wxa-oC-iLD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MIC-gK-A4Y" secondAttribute="trailing" constant="30" id="FSh-Ve-ve9"/>
+                            <constraint firstItem="MIC-gK-A4Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="HBf-YD-BMy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hqf-OQ-FMM" secondAttribute="bottom" constant="45" id="KWx-IA-qts"/>
+                            <constraint firstItem="hqf-OQ-FMM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZJt-P5-Otn"/>
+                            <constraint firstItem="MIC-gK-A4Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aqa-6q-NDY"/>
+                            <constraint firstItem="MIC-gK-A4Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="b43-z4-bBZ"/>
                         </constraints>
                     </view>
                     <connections>
