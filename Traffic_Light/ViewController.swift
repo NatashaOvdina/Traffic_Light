@@ -31,6 +31,7 @@ final class ViewController: UIViewController {
     
     @IBAction func buttonDidTapped() {
         if viewRed.alpha != 1.0 && viewYellow.alpha != 1.0 && viewGreen.alpha != 1.0 {
+            button.setTitle("NEXT", for: .normal)
             viewRed.alpha = 1.0
         } else if viewRed.alpha == 1.0 && viewYellow.alpha != 1.0 && viewGreen.alpha != 1.0 {
             viewRed.alpha = 0.45
@@ -40,6 +41,7 @@ final class ViewController: UIViewController {
             viewGreen.alpha = 1.0
         } else if viewGreen.alpha == 1.0 && viewRed.alpha != 1.0 && viewYellow.alpha != 1.0 {
             viewGreen.alpha = 0.45
+            button.setTitle("START", for: .normal)
         }
     }
 }
