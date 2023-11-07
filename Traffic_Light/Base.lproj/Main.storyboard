@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Traffic_Light" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="MIC-gK-A4Y">
-                                <rect key="frame" x="165" y="99" width="100" height="528.33333333333337"/>
+                                <rect key="frame" x="157" y="60.000000000000028" width="100" height="442.66666666666674"/>
                                 <subviews>
                                     <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APQ-GY-ZCc">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -28,11 +28,11 @@
                                         </constraints>
                                     </view>
                                     <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMR-Ji-ZBZ">
-                                        <rect key="frame" x="0.0" y="214.33333333333331" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="171.33333333333334" width="100" height="100.00000000000003"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LQ-mg-NTa">
-                                        <rect key="frame" x="0.0" y="428.33333333333337" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="342.66666666666669" width="100" height="100"/>
                                         <color key="backgroundColor" red="0.067407734282691825" green="0.69450708762886593" blue="0.001085301865133058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
@@ -46,7 +46,7 @@
                                 <variation key="heightClass=compact-widthClass=regular" axis="horizontal" distribution="equalSpacing"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-OQ-FMM">
-                                <rect key="frame" x="165" y="815.66666666666663" width="100" height="37.333333333333371"/>
+                                <rect key="frame" x="157" y="653.66666666666663" width="100" height="37.333333333333371"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="YvM-au-MCn"/>
